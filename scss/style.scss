@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:wght@400&display=swap');
+
+@font-face {
+    font-family: San Francisco;
+    src:url(/otf/SFNSDisplay-Ultralight.otf)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manuale', serif;
+    font-size: 20px;
+}
+
+
+  
+  .header {
+      background-size:cover;
+      height: 200px;
+      background: linear-gradient(90deg, rgba(19,50,43,1) 0%, rgba(45,119,102,1) 100%);
+
+    }
+  
+  .logo {
+    height: 230px;
+    width: 15rem; 
+}
+  
+hr {
+    border-radius: 5px;
+    box-shadow: 10px 10px 28px -17px rgba(0,0,0,0.75);
+}
+
+.caja-presentacion {
+    background: linear-gradient(90deg, rgba(19,50,43,1) 0%, rgba(45,119,102,1) 100%);
+    box-shadow: 5px 10px 15px -3px rgba(0,0,0,0.3);
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    height: 320px;
+
+
+}
+
+.caja-texto{
+    color: whitesmoke;
+
+text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+    margin-top:35px;
+    font-size: 15px;
+}
+
+.ilustracion {
+    height: 350px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 230px;
+margin: 10px;
+overflow: hidden;
+border-radius: 20px;
+background: linear-gradient(90deg, rgba(19,50,43,1) 0%, rgba(45,119,102,1) 100%);
+box-shadow: 5px 10px 15px -3px rgba(0,0,0,0.3);
+height: 350px;
+transition: height 2s;
+backdrop-filter: blur (10px);
+}
+
+.card-img img{
+    width: 230px;
+    height: 300px;
+    border-radius: 10px 10px 5px 5px;
+}
+
+.card-body h2{
+text-align: center;
+font-size: 24px;
+color: white;
+
+}
+
+.card-body p{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 25px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.cards:hover{
+background-color: rgb(240, 240, 240);
+cursor: pointer;
+height: 1210px;
+scroll-behavior: smooth;
+/*animation: fadeIn 0.2s ease-in-out;
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }  
+}*/
+}
+
+.card-body p h2:hover{
+    color: red;
+}
+
+
+
+footer{
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: white;
+    background: linear-gradient(90deg, rgba(19,50,43,1) 0%, rgba(45,119,102,1) 100%);
+}
+
+.copyright-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright{
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.footer-menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.footer-container{
+    height: fit-content;
+    width: 100%;
+    padding: 3rem 6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-content-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .website-logo{
+    margin-bottom: 1.2rem;
+    font-size: calc(1vw + 20px);
+}
+
+.footer-info, .menu-item-footer{
+    margin: 0.2rem 0;
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-item-footer:hover{
+    opacity: 1;
+}
+
+.menu-title{
+    font-size: var(--medium-text-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.social-link{
+    height: 100%;
+    width: 30px;
+    background-image: url(FacebookBlanco.png);
+    background-size: 70%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+}
+
+.social-link:hover{
+    opacity: 0.7;
+}
+
+footer .social-link:nth-of-type(2){
+    background-image: url(TwitterBlanco.png);
+}
+
+footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+    background-image: url(LinkedinBlanco.png);
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 768px){
+
+    .footer-container{
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-container:nth-of-type(1){
+        align-items: flex-start;
+    }
+    .footer-content-container:nth-of-type(3){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+    .footer-menus .footer-content-container:nth-of-type(2){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+}
