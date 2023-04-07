@@ -281,4 +281,16 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
         align-items: flex-start;
         border-bottom: none;
     }
+
+    .caja-presentacion{
+        display: block;
+        height: 750px;
+    }
+
+.caja-texto{
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 }
