@@ -64,7 +64,7 @@ hr {
   background: linear-gradient(90deg, #13322b 0%, #2d7766 100%);
   box-shadow: 5px 10px 15px -3px rgba(0, 0, 0, 0.3);
   height: 350px;
-  transition: height 2s;
+  transition: height 900ms ease-in;
   backdrop-filter: blur 10px; }
 
 .card-img img {
