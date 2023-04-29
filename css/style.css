@@ -234,7 +234,8 @@ footer .social-link:nth-of-type(3) {
     align-items: flex-start;
     border-bottom: none; }
   .footer-info, .menu-item-footer {
-    display: inline-flex; }
+    display: inline-grid;
+    font-size: 15px; }
   .whatsapp {
     width: 70;
     height: 70; }

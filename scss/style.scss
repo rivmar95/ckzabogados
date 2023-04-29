@@ -292,7 +292,8 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
     }
 
     .footer-info, .menu-item-footer{
-        display: inline-flex;
+        display: inline-grid;
+        font-size: 15px;
     }
 
     .whatsapp {
